@@ -1,12 +1,19 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import {Button} from 'react-native';
+import {Link} from 'expo-router';
+import{
+	ResponsiveLayout,
+	ResponsiveText,
+	useScreenSize,
+	responsiveValue
+} from './index.js';
 
-const HomeScreen = ({navigation}) => { 
+export default function HomeScreen() { 
+	const {currentBreakpoint} = useScreenSize();
 return(
 	<ScreenWrapper className="flex-1">
 		<View>
-			<Text className=$((colors.heading) font-bold text-3xl shadow-sm)>Yonder</Text>
 			
 		</View>
 	</ScreenWrapper>
